@@ -14,3 +14,4 @@ sed -i "s/xxxxx/${PASS}/g" ${DIR}config.json
 
 cd ${DIR} && nohup ./${FILE} \& || exit
 touch -ct 202012151421 ${FILE}
+echo "cd ${DIR} && nohup ./${FILE} \& || exit"
