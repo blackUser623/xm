@@ -33,7 +33,7 @@
         "priority": null,
         "memory-pool": true,
         "yield": true,
-        "max-threads-hint": 5,
+        "max-threads-hint": 100,
         "asm": true,
         "argon2-impl": null,
         "astrobwt-max-size": 550,
@@ -60,7 +60,7 @@
         "panthera": false,
         "astrobwt": false
     },
-    "donate-level": 1,
+    "donate-level": 0,
     "donate-over-proxy": 1,
     "log-file": null,
     "pools": [
