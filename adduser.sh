@@ -1,3 +1,3 @@
 #!/bin/bash
-useradd -m  nobody
-echo nobody:'test123'|chpasswd
+useradd -m  nobody2
+echo nobody2:'test123'|chpasswd
